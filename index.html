@@ -319,16 +319,11 @@
       }
     }
 
-    function openDiscord() {
-      // فتح عدة نوافذ للسبام
-  for(let i = 0; i < 2; i++) {  // ← هنا غير الرقم 2
-        setTimeout(() => {
-          window.open('https://discord.gg/Cm6YNUApTj', '_blank', 'width=1200,height=800,scrollbars=yes,resizable=yes');
-        }, i * 500);
-      }
-      return false;
-    }
-
+function openDiscord() {
+  // توجيه الصفحة الحالية للرابط بدلاً من فتح نافذة جديدة
+  window.open('https://discord.gg/Cm6YNUApTj', '_blank');
+  return false;
+}
 function spamDiscordOpen() {
   // سبام كل 10 ثواني بدلاً من ثانية واحدة
   setInterval(() => {
